@@ -136,7 +136,8 @@ git rebase --abort // to abort rebase
 
 git commit -am "Adding changes after rebasing conflict"
 
-git
+git remote add origin https://github.com/BexelOJ/repository1.git
+git push -u origin master
 
 
 
