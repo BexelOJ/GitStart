@@ -136,6 +136,7 @@ git rebase --abort // to abort rebase
 
 git commit -am "Adding changes after rebasing conflict"
 
+git
 
 
 
