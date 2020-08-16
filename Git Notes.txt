@@ -1,0 +1,157 @@
+https://git-scm.com/ //install Git from this website
+
+mkdir projects //in the Git Bash, to make a new folder named projects in the users folder
+git version // to check the version of the installed git
+git config --global user.name "Bexel O J" // git initial configurations
+git config --global user.email "bexel.o.j@gmail.com"
+git config --global --list
+
+git clone https://github.com/BexelOJ/github-demo.git // to clone the git from the given address to the local repo
+git status // on branch master, give the status of the commited files
+
+Basic Git Workflow Life Cycle
+
+                         Local                                   Remote
+Working Directory   Staging Area    Repository(.git folder)
+git status // shows file in the staging area
+git commit -m "Adding start text file"
+git status //
+
+git push origin master // to push from local repository to cloud repository
+
+notepad++ .bash_profile // write this in git bash, and press Enter.
+
+alias npp='notepad++.exe -multiInst -nosession' // write this in notepad++, 
+to run notepad++ in Git bash when the command 'npp' is run in bash.
+
+cat ~/.gitconfig // to see the username and the email of the user
+
+Git Basics Overview
+
+Starting a Project
+ - Fresh (no source yet)
+ - Existing Source locally
+ - Github project (Fork and Clone)
+Basic Workflow (add, commit, push, pull)
+Working with Files (rename, move & delete)
+History and Aliases
+Ignoring Unwanted Files
+
+git init new-project // to initial a new project
+
+ls -al // in case of empty folder, to see the .git file
+
+Adding new file to Git
+1.) git status // to check the status of the git
+2.) make a new file inside the folder
+3.) git add filename.txt // to add the new file filename.txt to local git
+4.) git status // gives the status of the newly added file
+5.) git commit -m "comments"// saves the new file to local git
+6.) git push // to push from local repo to remote repo
+
+git commit -m "Comment in the commit"
+
+mv oldname newname // changes the name of the file in the folder
+git mv oldname newname
+
+git init // to initialize git after getting into the new folder,(to add that folder to the local git).
+git add . // to add all the file recursively/simultaneously for staging.
+git status
+git commit -m "commit message. inline" // files from staging to saving in local repo
+
+ls -al // if .git folder is present, that folder is managed by Git.
+rm -rf .git // delete the git folder
+
+https://github.com/BexelOJ/ubuntu.git
+
+add commit pull and push
+
+git push origin master // to add a new git file in Local Repo to Remote Repo
+git push // (after adding the new file to local repo to remote repo)
+
+git ls-files // file in staging, tracking.(shows a list of files, in tracking)
+
+git reset HEAD filename.ext // moves the file from staging to back, (Unstaging the file)
+git checkout -- filename.ext //
+
+clear // to clear the screen
+
+git add -A // updates any files which renamed, moved or deleted
+
+OMR - Origin Master
+BMW - Branch Master
+
+git rm filename // deleting(removing) the file, staging for deletion
+git commit -m "delecting the file" // 
+git status // 
+
+git help log //
+git log --oneline --graph --decorate // to see the History of commits 
+git log --since="3 days ago" // commits in the last 3 days
+git show (commitid) // to show that particular commit
+
+gitignore
+
+Comparing, Branching and Merging
+
+git diff // shows what in the file get modified
+git difftool HEAD
+
+git diff --staged HEAD
+git difftool --staged HEAD
+
+git log --oneline // shows commit ID and the Comments
+
+master
+feature branch
+
+git branch // to see the current branches
+git checkout master // 
+git branch -m mynewbranch newbranch // mynewbranch-keyword, (cmd to create a new branch from the master)
+
+git checkout -b title-change // switched to a new branch 'title-change'
+git merge title-change // to merge the current branch with the source branch  
+
+git branch // to see the current branches
+git checkout -b add-copyright // Switched to a new branch 'add-copyright', also current branch is add-copyright
+
+No Fast Forward = --no-ff
+
+git log --oneline --graph --decorate --all
+git log --oneline --graph --decorate --all --graph
+
+merge commit
+
+git merge branchname -m "comments"
+
+git mergetool //
+
+fork = copying from another github to your github
+clone = copying from remote github to local hithub
+rebase =  is the process of moving or combining a sequence of commits to a new base commit
+
+git rebase --abort // to abort rebase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
